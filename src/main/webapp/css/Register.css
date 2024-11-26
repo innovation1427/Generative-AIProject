@@ -1,0 +1,86 @@
+@charset "UTF-8";
+header {
+	height: 80px;
+	paddin-bottom: 5px;
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+section#top{
+	
+	width:230px;
+    height:70px;
+    margin:auto;
+    padding-top: 10px;
+} 
+
+section#main {
+    width:532px;
+    height: 700px;
+    top:100px;	/* header의 높이만큼 아래로 내림 */
+    position: absolute; /* header를 기준으로 위치 설정 */
+    margin:auto;
+}
+section#sub {
+    height: 20px;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 492px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 16px 12px 16px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+div.gender-radio {
+        display: inline-block;
+        margin-right: 10px; /* 라디오 버튼 간격 조절을 위해 조절하세요 */
+    }
+    
+div.role-radio {
+        display: inline-block;
+        margin-right: 10px; /* 라디오 버튼 간격 조절을 위해 조절하세요 */
+    }
+
+button {
+    background-color: #757575; /* 회색 */
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s; /* 변화에 애니메이션 효과 추가 */
+}
+
+button:hover {
+    background-color: #000; /* 검은색 */
+}

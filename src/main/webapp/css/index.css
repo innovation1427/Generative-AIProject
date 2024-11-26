@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+
+section#main {
+    width:2500px;
+    margin:auto;
+}
+
+header{
+	height:100px;
+    margin:auto;
+    background-color: silver;
+}
+
+nav#login { 
+	width: 500px; 
+	height: 500px; 
+	float: left; 
+	background-color: orange;
+}
+section#roll { 
+	width: 1500px; 
+	height: 500px; 
+	float: left; 
+	background-color: olivedrab;
+	margin-bottom: 50px;
+	margin-left: 50px;
+}
+
+.banner{
+    color: white;
+    font-size: 16px;
+    height: 30px;
+    width: 100px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+section#rollbtn {
+  margin-top: 550px;
+  margin-left: 1250px;
+  margin-bottom: 50px;
+  width: 100px;
+  height: 30px;
+  background-color: red;
+}
+
+nav#creatorvd {
+	margin-left: 80px; 
+	width: 600px; 
+	height: 500px; 
+	float: left; 
+	background: orange;
+	clear:left;
+	margin-right: 50px;
+}
+
+section#officialvd { 
+	width: 600px; 
+	height: 500px; 
+	float: left; 
+	background: olivedrab;
+	margin-right: 50px;
+}
+
+aside#rank { 
+	width: 600px; 
+	height: 500px; 
+	float: left; 
+	background: skyblue;
+}
+
+footer#copyright{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+

@@ -1,0 +1,221 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family:"맑은 고딕", "돋움";
+    font-size:12px;
+    color:#444444;
+    background-color:white;
+}
+ul {
+    list-style-type:none;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration:none;
+    color:#444444;
+}
+.clear {
+    clear:both;
+}
+/* ---------- 헤더 ------------- */
+header {
+    height:100px;
+}
+header #top {
+    width:990px;
+    margin:0 auto;
+/* border:solid 1px #0000ff; */
+}
+header #logo {
+    float:left;
+    margin:15px 0 0 10px;
+/* border:solid 1px #000000; */
+}
+
+/* 상단 메뉴 */
+header #top_menu {
+    float:right;
+    margin-top:45px;
+/* border:solid 1px #000000; */
+}
+header #top_menu a:link {
+    font-size:11px;
+    color:#888888;
+}
+header #top_menu a:visited {
+    font-size:11px;
+    color:#888888;
+}
+header #top_menu a:hover {
+    font-size:11px;
+    color:#888888;
+}
+header #top_menu a:active {
+    font-size:11px;
+    color:#888888;
+}
+header #top_menu li.green a:link {
+    color:#f19149;
+}
+header #top_menu li.green a:visited {
+    color:#f19149;
+}
+header #top_menu li.green a:hover {
+    color:#f19149;
+}
+header #top_menu li.green a:active {
+    color: #f19149;
+}
+header #top_menu li {
+    display:inline;
+    margin-left:10px;
+}
+/* 메인 메뉴 */
+header #main_menu {
+    height:70px;
+    background-color:ffffff;
+    border-bottom:solid 2px  #000000;
+/* border:solid 1px #0000ff; */
+}
+header #main_menu ul {
+    width:990px;
+    margin:auto;
+/* border:solid 1px #ff0000; */
+    padding-top:28px;
+    text-align:center;
+    font-size : 20px;
+    font-weight : bold;
+}
+header #main_menu li {
+    display:inline;
+    margin:0 35px;
+}
+header #main_menu a:link {
+    color:#000000;
+    
+}
+header #main_menu a:visited {
+    color:#000000;
+}
+header #main_menu a:hover {
+    color:#000000;
+}
+header #main_menu a:active {
+    color:#000000;
+}
+
+section#ranking {
+  text-align: center;
+  margin: 50px;
+}
+
+ol#rankList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#rankList li {
+  background-color: #f0f0f0;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* ------------- 푸터 ----------------- */
+footer {
+    height:100px;
+    margin-top:20px;
+    background-color: #000000;
+}
+footer #footer_menu_box {
+    height:40px;
+    text-align: center;
+    margin:auto;
+}
+footer #footer_menu {
+    width:990px;
+    margin:0 auto;
+    padding-top:15px;
+}
+footer #footer_menu ul {
+    
+}
+footer #footer_menu li {
+    display:inline;
+    margin-left:2px;
+}
+footer #footer_menu a:link {
+    color:#F2F2F2;
+}
+footer #footer_menu a:hover {
+    color:#F2F2F2;
+}
+footer #footer_menu a:visited {
+    color:#F2F2F2;
+}
+footer #footer_menu a:active {
+    color:#F2F2F2;
+}
+footer #footer_address {
+    width:990px;
+    margin:auto;
+    color:#e2e2e2;
+    text-align: center;
+}
+
+/* ------------- 로그인 버튼 마우스 모양 변경 (안됨)----------------- */
+img.button-image {
+    cursor: pointer;
+}
+
+img.button-image:hover {
+    opacity: 0.8;
+}
+
+section#login:active {
+	cursor: pointer;
+}
+/* 게임소식 메뉴에 마우스를 올렸을 때 효과 */
+nav#main_menu ul li {
+    position: relative; /* 상대적 위치 설정 */
+}
+
+nav#main_menu ul li:hover {
+    background-color: #ddd; /* 마우스를 올렸을 때의 배경색 */
+}
+
+/* 서브 메뉴 */
+nav#main_menu ul li ul {
+    display: none; /* 초기에는 서브 메뉴 감춤 */
+    position: absolute;
+    top: 100%; /* 메인 메뉴 아래에 위치 */
+    left: 50%; /* 중앙을 기준으로 펼치기 */
+    background-color: rgba(255, 255, 255, 0.9); /* 투명도 조절 */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 150px; /* 가로 크기 조절 */
+    transform: translateX(-50%); /* 가운데 정렬 */
+    padding-top: 5px;
+}
+
+nav#main_menu ul li:hover ul {
+    display: block; /* 마우스를 올렸을 때 서브 메뉴 표시 */
+}
+
+nav#main_menu ul li ul li {
+    display: block;
+    padding: 10px;
+    width: 100%; /* 항목 가로 크기 조절 */
+    box-sizing: border-box; /* 패딩을 포함한 전체 너비 계산 */
+    white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+    font-size: 14px; /* 글씨 크기 조절 */
+    text-align: left; /* 왼쪽 정렬 추가 */
+    padding-left: 10px; /* 왼쪽 여백 추가 */
+    margin:0px;
+}
+
+/* 서브 메뉴 항목에 마우스를 올렸을 때 효과 */
+nav#main_menu ul li ul li:hover {
+    background-color: #eee; /* 마우스를 올렸을 때의 배경색 */
+}

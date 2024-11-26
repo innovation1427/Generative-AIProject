@@ -1,0 +1,287 @@
+/* 메인 콘텐츠 */
+section#main {
+    width:990px;
+    margin:auto;
+}
+/* 좌측 카테고리 + 메인 이미지 + 공지사항/고객센터 */
+section#cat {
+    width:204px;
+    height: 700px;
+    float:left;
+    display: flex;
+  	flex-direction: column;
+  	margin-bottom: 20px;	 
+}
+section#serch{
+	width:204px;
+    height: 30px;
+	padding: 3px;
+}
+section#serch input[type="text"] {
+    width: 160px; /* 변경된 부분 */
+}
+section#serch button {
+    margin-left: 3px; /* 변경된 부분 */
+}
+section#cat1 {
+    width:200px;
+    height: 292px;
+    float:left;
+    margin-top:15px;
+   
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+section#cat1 #cat_title {
+    padding: 10px;
+    background-image: url('../img/game_start.png');
+    background-size: contain; /* cover 대신 contain 사용 */
+    background-repeat: no-repeat; /* 이미지 반복 제거 */
+    color: #000000;
+    border-radius: 20px 20px 0 0;
+    height: 140px;
+}
+section#cat1 li {
+    color:#666666;
+    padding:7px 0 7px 30px;
+    border-bottom:solid 1px #cccccc;
+}
+section#cat1 li:last-child {
+    border-bottom: 0px;
+}
+section#cat1 #service {
+    float:left;
+    margin-top:30px;
+    margin-left:8px;
+}
+section#cat1 #login {
+    float:left;
+    margin-top:18px;
+    margin-left:8px;
+}
+/* cat2에 스타일 추가 */
+section#cat2 {
+    float: right;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    margin-right: 13px;
+    width: 700px;
+    border: 2px solid #000000; /* 태두리 추가 */
+    border-radius: 15px; /* 둥근 테두리 */
+    padding: 10px; /* 내부 여백 추가 */
+}
+
+/* 공지사항 테이블 스타일 추가 */
+section#cat2 .board {
+    width: 100%;
+
+}
+
+section#cat2 .board-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f0f0f0; /* 타이틀 배경색 */
+    margin-bottom: 10px;
+}
+
+section#cat2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section#cat2 th, section#cat2 td {
+    border: 1px solid #ddd; /* 테이블 셀 경계선 */
+    padding: 8px;
+    text-align: left;
+}
+
+section#cat2 th {
+    background-color: #f2f2f2; /* 테이블 헤더 배경색 */
+}
+
+section#cat2 tbody tr:hover {
+    background-color: #f5f5f5; /* 테이블 행에 마우스 오버시 배경색 */
+}
+
+section#cat3 {
+    width:250px;
+    margin-left: 13px;
+    float:left;
+    margin-top:17px;
+}
+section#cat3 #customer {
+    width:239px;
+    height:180px;
+    margin-bottom: 10px;
+    background-image:url("../img/portfolio/customer.jpg");
+    background-repeat:no-repeat;
+}
+section#cat3 #customer img {
+    margin:40px 0 0 4px;
+}
+section#cat3 #latest_notice {
+    width:239px;
+    height:161px;
+    background-image:url("../img/portfolio/latest_notice.jpg");
+    background-repeat:no-repeat;
+}
+section#cat3 #latest_notice ul {
+    padding:50px 0 0 30px;
+    list-style-image:url("../img/portfolio/orange_dot.jpg");
+}
+
+section#fuck {
+    height:50px;
+    margin-top:30px;
+   
+}
+section#fuck #sub_menu {
+	width:760px;
+    height:40px;
+    float:right;
+    background-color:ffffff;
+/* border:solid 1px #0000ff; */
+}
+section#fuck #sub_menu ul {
+    width:760px;
+    margin:0 0 0 0;
+/* border:solid 1px #ff0000; */
+    float:right;
+    text-align:center;
+    font-size : 12px;
+    font-weight:bold;
+}
+section#fuck #sub_menu li {
+    display:inline;
+    margin:0 35px;
+}
+section#recommend {
+    height:390px;
+    margin-top:30px;
+    border-top:solid 2px  #000000;
+}
+section#recommend h3 {
+  margin: 8px 0 0 10px;
+    color:black;
+}
+section#recommend .item{
+    float:left;
+    text-align:center;
+    margin:20px 15px 10px 15px;
+}
+section#recommend .item_center{
+    margin: 20px auto 0 auto;
+    text-align:center;
+    margin:20px 0 0 15px;
+}
+section#recommend .item_right{
+    float:right;
+    text-align:center;
+    margin:20px 0 0 15px;
+}
+section#recommend .item .subject{
+    margin-top:10px;
+    color:black;
+}
+section#recommend .item .comment{
+    margin-top:5px;
+}
+section#recommend .item .price{
+    margin-top:5px;
+    font-weight:bold;
+    color:#00258f;
+}
+/* 개별상품 */
+section#single {
+    height:760px;
+    margin-top:20px;
+    border-top:solid 2px  #ff7a17;
+}
+section#single h3 {
+  margin: 8px 0 0 10px;
+    color:black;
+}
+section#single .item{
+    float:left;
+    text-align:center;
+    margin:50px 0 0 32px;
+}
+section#single .item .subject{
+    margin-top:10px;
+    color:black;
+}
+section#single .item .comment{
+    margin-top:5px;
+}
+section#single .item .price{
+    margin-top:5px;
+    font-weight:bold;
+    color:#00258f;
+}
+/* CSS 추가 또는 수정 */
+#sub2_manu {
+  margin-top:10px;
+  border-radius: 10px;
+}
+
+#sub2_manu h2 {
+  color: #333;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+#sub2_manu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    list-style-position: inside;
+    border-radius: 10px; /* 둥글게 만들고자 하는 정도 설정 */
+    overflow: hidden; /* border-radius를 적용하기 위한 설정 */
+}
+
+
+#sub2_manu li {
+  list-style-type: disc;
+  padding: 15px; /* 내용과의 간격을 설정 */
+  margin-bottom: 0px; /* 리스트 간의 간격을 설정 */
+}
+
+#sub2_manu a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+#sub2_manu a:hover {
+  text-decoration: underline;
+}
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination span.current {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+/* 추가된 부분 */
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}

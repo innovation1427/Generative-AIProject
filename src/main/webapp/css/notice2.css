@@ -1,0 +1,730 @@
+/* 메인 콘텐츠 */
+section#main {
+    width:990px;
+    margin:auto;
+}
+/* 좌측 카테고리 + 메인 이미지 + 공지사항/고객센터 */
+section#cat {
+    width:204px;
+    height: 700px;
+    float:left;
+    display: flex;
+  	flex-direction: column;
+  	margin-bottom: 20px;
+  	
+    
+}
+.next a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .next a:hover {
+    color: #0056b3;
+  }
+section#serch{
+	width:204px;
+    height: 30px;
+	padding: 3px;
+}
+section#serch input[type="text"] {
+    width: 160px; /* 변경된 부분 */
+}
+section#serch button {
+    margin-left: 3px; /* 변경된 부분 */
+}
+section#cat1 {
+    width:200px;
+    height: 292px;
+    float:left;
+    margin-top:15px;
+   
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+section#cat1 #cat_title {
+    padding: 10px;
+    background-image: url('../img/game_start.png');
+    background-size: contain; /* cover 대신 contain 사용 */
+    background-repeat: no-repeat; /* 이미지 반복 제거 */
+    color: #000000;
+    border-radius: 20px 20px 0 0;
+    height: 140px;
+}
+section#cat1 li {
+    color:#666666;
+    padding:7px 0 7px 30px;
+    border-bottom:solid 1px #cccccc;
+}
+section#cat1 li:last-child {
+    border-bottom: 0px;
+}
+section#cat1 #service {
+    float:left;
+    margin-top:30px;
+    margin-left:8px;
+}
+section#cat1 #login {
+    float:left;
+    margin-top:18px;
+    margin-left:8px;
+}
+/* cat2에 스타일 추가 */
+section#cat2 {
+    float: right;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    margin-right: 13px;
+    width: 700px;
+    border: 2px solid #000000; /* 태두리 추가 */
+    border-radius: 15px; /* 둥근 테두리 */
+    padding: 10px 10px 0px 10px; /* 내부 여백 추가 */
+    position: relative;
+    min-height: 100%;
+    flex-grow: 1;
+}
+section#cat2 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+section#cat2 .header .title {
+    font-size: 24px;
+}
+
+section#cat2 .header.back {
+    text-align: right;
+    margin-top: 10px;
+    background-color: #007bff;
+    /* Adjust the margin as needed */
+}
+
+section#cat2 .header.back a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+section#cat2 .header.back a:hover {
+    background-color: #ffffff;
+}
+
+
+#cat2 .center {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex-grow: 1; /* 나머지 영역을 최대한 확장 */
+}
+
+#cat2 .center > div {
+	flex: 1; /* 각 항목이 동일한 너비를 가지도록 설정 */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+#cat2 .center .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#cat2 .info .title2,
+#cat2 .info .nick,
+#cat2 .info .date,
+#cat2 .info .count {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+
+#cat2 .center .text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 100%; /* 최대 너비 100%로 설정 */
+    margin:0px;
+      /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
+    min-height: 350px; /* 최소 높이 설정 */
+}
+
+
+
+#cat2 .footer {
+    position: relative; /* 상대 위치로 설정 */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1; /* 필요에 따라 z-index를 사용하여 다른 요소 위에 표시 */
+    margin-top: -10px; /* center와 겹치는 마진을 조정 */
+}
+#cat2 .footer > div {
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box; /* border와 padding이 너비에 포함되도록 설정 */
+}
+
+
+
+
+#cat2 .text {
+    min-height: 150px;
+}
+
+#cat2 .footer > div:hover,
+#cat2 .header .back:hover {
+    background-color: #555;
+}
+#cat2 .footer {
+    display: flex;
+    flex-direction: column; /* 컬럼으로 변경 */
+    align-items: center; /* 가운데 정렬을 위해 추가 */
+}
+
+#cat2 .footer > div {
+    width: 100%; /* 너비 100%로 설정 */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+ /* 간격 조절을 위해 추가 */
+}
+section#cat2 .board {
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    height: 650px;
+    overflow-y: auto; /* Add scrollbar if content overflows */
+}
+
+section#cat2 .board-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+section#cat2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section#cat2 th, section#cat2 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+section#cat2 th {
+    background-color: #f2f2f2;
+}
+
+section#cat2 tbody tr:hover {
+    background-color: #f5f5f5;
+}
+section#cat2 .notice-details {
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    height: 650px;
+    overflow-y: auto; /* Add scrollbar if content overflows */
+}
+
+section#cat2 .details-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section#cat2 .details-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+section#cat2 .details-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+section#cat3 {
+    width:250px;
+    margin-left: 13px;
+    float:left;
+    margin-top:17px;
+}
+section#cat3 #customer {
+    width:239px;
+    height:180px;
+    margin-bottom: 10px;
+    background-image:url("../img/portfolio/customer.jpg");
+    background-repeat:no-repeat;
+}
+section#cat3 #customer img {
+    margin:40px 0 0 4px;
+}
+section#cat3 #latest_notice {
+    width:239px;
+    height:161px;
+    background-image:url("../img/portfolio/latest_notice.jpg");
+    background-repeat:no-repeat;
+}
+section#cat3 #latest_notice ul {
+    padding:50px 0 0 30px;
+    list-style-image:url("../img/portfolio/orange_dot.jpg");
+}
+
+section#fuck {
+    height:50px;
+    margin-top:30px;
+   
+}
+section#fuck #sub_menu {
+	width:760px;
+    height:40px;
+    float:right;
+    background-color:ffffff;
+/* border:solid 1px #0000ff; */
+}
+section#fuck #sub_menu ul {
+    width:760px;
+    margin:0 0 0 0;
+/* border:solid 1px #ff0000; */
+    float:right;
+    text-align:center;
+    font-size : 12px;
+    font-weight:bold;
+}
+section#fuck #sub_menu li {
+    display:inline;
+    margin:0 35px;
+}
+section#recommend {
+    height:390px;
+    margin-top:30px;
+    border-top:solid 2px  #000000;
+}
+section#recommend h3 {
+  margin: 8px 0 0 10px;
+    color:black;
+}
+section#recommend .item{
+    float:left;
+    text-align:center;
+    margin:20px 15px 10px 15px;
+}
+section#recommend .item_center{
+    margin: 20px auto 0 auto;
+    text-align:center;
+    margin:20px 0 0 15px;
+}
+section#recommend .item_right{
+    float:right;
+    text-align:center;
+    margin:20px 0 0 15px;
+}
+section#recommend .item .subject{
+    margin-top:10px;
+    color:black;
+}
+section#recommend .item .comment{
+    margin-top:5px;
+}
+section#recommend .item .price{
+    margin-top:5px;
+    font-weight:bold;
+    color:#00258f;
+}
+/* 개별상품 */
+section#single {
+    height:760px;
+    margin-top:20px;
+    border-top:solid 2px  #ff7a17;
+}
+section#single h3 {
+  margin: 8px 0 0 10px;
+    color:black;
+}
+section#single .item{
+    float:left;
+    text-align:center;
+    margin:50px 0 0 32px;
+}
+section#single .item .subject{
+    margin-top:10px;
+    color:black;
+}
+section#single .item .comment{
+    margin-top:5px;
+}
+section#single .item .price{
+    margin-top:5px;
+    font-weight:bold;
+    color:#00258f;
+}
+/* CSS 추가 또는 수정 */
+#sub2_manu {
+  margin-top:10px;
+  border-radius: 10px;
+}
+
+#sub2_manu h2 {
+  color: #333;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+#sub2_manu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    list-style-position: inside;
+    border-radius: 10px; /* 둥글게 만들고자 하는 정도 설정 */
+    overflow: hidden; /* border-radius를 적용하기 위한 설정 */
+}
+
+
+#sub2_manu li {
+  list-style-type: disc;
+  padding: 15px; /* 내용과의 간격을 설정 */
+  margin-bottom: 0px; /* 리스트 간의 간격을 설정 */
+}
+
+#sub2_manu a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+#sub2_manu a:hover {
+  text-decoration: underline;
+}
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+/* 메인 콘텐츠 */
+section#main {
+    width: 990px;
+    margin: auto;
+}
+
+/* 좌측 카테고리 + 메인 이미지 + 공지사항/고객센터 */
+section#cat {
+    width: 204px;
+    height: 700px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.next{
+	background-color: #f0f0f0;
+}
+.next a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.next a:hover {
+    color: #0056b3;
+}
+
+section#serch {
+    width: 204px;
+    height: 30px;
+    padding: 3px;
+}
+
+section#serch input[type="text"] {
+    width: 160px;
+}
+
+section#serch button {
+    margin-left: 3px;
+}
+
+section#cat1 {
+    width: 200px;
+    height: 292px;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+
+section#cat1 #cat_title {
+    padding: 10px;
+    background-image: url('../img/gamestart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #000000;
+    border-radius: 20px 20px 0 0;
+    height: 140px;
+}
+
+section#cat1 li {
+    color: #666666;
+    padding: 7px 0 7px 30px;
+    border-bottom: solid 1px #cccccc;
+}
+
+section#cat1 li:last-child {
+    border-bottom: 0px;
+}
+
+section#cat1 #service {
+    float: left;
+    margin-top: 30px;
+    margin-left: 8px;
+}
+
+section#cat1 #login {
+    float: left;
+    margin-top: 18px;
+    margin-left: 8px;
+}
+
+/* cat2에 스타일 추가 */
+section#cat2 {
+    float: right;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    margin-right: 13px;
+    width: 700px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px 10px 0px 10px;
+    position: relative;
+    min-height: 100%;
+    flex-grow: 1;
+}
+
+
+section#cat2 .header .title {
+    font-size: 24px;
+}
+
+section#cat2 .header.back {
+    text-align: right;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+section#cat2 .header.back a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #fff;
+    
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+section#cat2 .header.back a:hover {
+    background-color: #ffffff;
+}
+
+#cat2 .center {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+#cat2 .center > div {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#cat2 .center .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#cat2 .info .title2,
+#cat2 .info .nick,
+#cat2 .info .date,
+#cat2 .info .count {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#cat2 .center .text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 0px;
+    min-height: 350px;
+}
+
+#cat2 .footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+#cat2 .footer > div {
+    flex: 1;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#cat2 .text {
+    min-height: 150px;
+}
+
+#cat2 .footer > div:hover,
+#cat2 .header .back:hover {
+    background-color: #555;
+}
+
+#cat2 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cat2 .footer > div {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section#cat2 .board,
+section#cat2 .notice-details {
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    height: 650px;
+    overflow-y: auto;
+}
+
+section#cat2 .board-title,
+section#cat2 .details-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+section#cat2 table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section#cat2 th,
+section#cat2 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+section#cat2 th {
+    background-color: #f2f2f2;
+}
+
+section#cat2 tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+section#cat2 .details-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+section#cat2 .details-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+section#cat3 {
+    width: 250px;
+   
+
+.pagination span.current {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+/* 추가된 부분 */
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+}

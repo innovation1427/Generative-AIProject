@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 랭킹</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <script>
+        // 페이지가 로드되면 실행
+        document.addEventListener("DOMContentLoaded", function () {
+            fetchRankings();
+        });
+
+        // AJAX 요청으로 랭킹 데이터 가져오기
+        function fetchRankings() {
+            fetch('/5teamfinalProject/GetRankingsController')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => updateRankingTable(data))
+                .catch(error => console.error('Error fetching rankings:', error));
+        }
+
+        // 가져온 데이터를 HTML 테이블에 표시
+        function updateRankingTable(rankings) {
+            const tableBody = document.getElementById('ranking-table-body');
+            tableBody.innerHTML = ""; // 기존 내용 초기화
+
+            rankings.forEach((row, index) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${row.user_id}</td>
+                    <td>${row.score}</td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>실시간 랭킹</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>순위</th>
+                <th>사용자 ID</th>
+                <th>점수</th>
+            </tr>
+        </thead>
+        <tbody id="ranking-table-body">
+            <!-- 여기에 랭킹 데이터가 동적으로 추가됩니다 -->
+        </tbody>
+    </table>
+</body>
+</html>
