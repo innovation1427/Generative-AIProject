@@ -48,7 +48,7 @@
 
 <%
     // YouTube API 키 (본인의 키로 교체)
-    String apiKey = "AIzaSyAQufDnWVHWSgwhWqWBH4NZZoG9kQGzCy0";
+    String apiKey = "";
 
     // 채널 ID (해당 채널의 ID로 교체)
     String channelID = "UC9otskL_kd-0CDib_5Lj-mQ";

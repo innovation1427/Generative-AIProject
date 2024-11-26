@@ -317,16 +317,16 @@ document.addEventListener("DOMContentLoaded", function () {
     <section id="main">
         <section id="cat1">
             <section id="cat_title">
-                <a href="penalty_game.jsp" class="game-start-button"></a>
+                <a href="penalty_game.do" class="game-start-button"></a>
             </section>
             <section id="login">
                 <% if (userId == null) { %>
                     <a href="loginpage.jsp">
-                        <img class="button-image" src="img/login.png" alt="로그인">
+                        <img class="button-image" src="img/login.png" width ='185px' alt='Button'>
                     </a>
                 <% } else { %>
                     <a href="logout.do">
-                        <img class="button-image" src="img/logout.png" alt="로그아웃">
+                        <img class="button-image" src="img/logout.png" width ='185px' alt='Button'>
                     </a>
                 <% } %>
             </section>
@@ -345,19 +345,6 @@ document.addEventListener("DOMContentLoaded", function () {
         		<p id="high-score">최고 점수: <%= currentScore %></p>
         		<p id="current-score">점수: 0</p>
     		</div>
-
-            <h2>실시간 랭킹</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>순위</th>
-                        <th>사용자 ID</th>
-                        <th>점수</th>
-                    </tr>
-                </thead>
-                <tbody id="ranking-table-body">
-                </tbody>
-            </table>
         </section>
     </section>
     <%@ include file="footer.jsp" %>

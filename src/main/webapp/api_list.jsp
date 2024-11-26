@@ -48,7 +48,7 @@
 
 <%
     // YouTube API 키 (본인의 키로 교체)
-    String apiKey = "AIzaSyAQufDnWVHWSgwhWqWBH4NZZoG9kQGzCy0";
+    String apiKey = "";
 
     // 검색어 (검색하고 싶은 키워드로 교체)
     String searchQuery = "FC온라인";

@@ -43,6 +43,7 @@
             </ul></li>
           <li><a href="rank.do">데이터센터</a><ul>
           	<li><a href="rank.do">해외 축구 랭킹</a></li>
+          	<li><a href="score_ranking.html">PK 게임 랭킹</a></li>
 		        <li><a href="#">선수</a></li>
 		        <li><a href="#">감독/팀컬러</a></li>
 		        <li><a href="#">공식경기 랭킹</a></li>
@@ -71,7 +72,7 @@
     <section id="cat1">
 
      <section id="cat_title">
-    	<a href="penalty_game.jsp" class="game-start-button">
+    	<a href="penalty_game.do" class="game-start-button">
     	</a>
 	</section>
 
